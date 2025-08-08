@@ -1,4 +1,4 @@
-# avtrustbench_project
+# AURA: A Fine-Grained Benchmark and Decomposed Metric for Audio-Visual Reasoning
 
 # Acknowledgement
 
