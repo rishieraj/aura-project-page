@@ -111,7 +111,7 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">AURA: A Fine-Grained Benchmark and Decomposed Metric for Audio-Visual Reasoning</h1>
-          <h1 style="font-size:2vw"><font color="#ff0000"> <b> AAAI 2026 </b> </font></h1> <br>
+          <h1 style="font-size:2vw"><font color="#ff0000"> <b> Pre-Print </b> </font></h1> <br>
 		<h1 style="font-size:2vw"><font color="#ff0000"> <b>  </b> </font></h1> <br>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
@@ -122,7 +122,7 @@
               <a href="https://schowdhury671.github.io/">Sanjoy Chowdhury</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://sayannag.github.io/">Sayan Nag</a><sup>2,3</sup>,
+              <a href="https://sayannag.github.io/">Sayan Nag</a><sup>2</sup>,
             </span>
 			      <span class="author-block">
               <a href="https://users.umiacs.umd.edu/~ramanid/">Ramani Duraiswami</a><sup>1</sup>
@@ -131,8 +131,7 @@
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>University of Maryland,</span>
-            <span class="author-block"><sup>2</sup>University of Toronto,</span>
-			      <span class="author-block"><sup>3</sup>Adobe Research,</span>
+			      <span class="author-block"><sup>2</sup>Adobe Research</span>
           </div>
 
           <div class="column has-text-centered">
@@ -314,9 +313,10 @@
           <!-- <center><h1 style="font-size: 25px; color:brown" " class="title is-3"></h1></center> -->
           <img src="static/images/data_pipeline.png" height=100%/>
           <p class="content has-text-justified">
-            <b>Qualitative results:</b> We report top 8 models’ performance on three representative tasks MCIT, COT-Swap and MAT.
-            GPT-4o consistently outperforms open-source models. Under instruction setting we append the phrase “If the correct answer is not
-            present respond with None of the above”. More qualitative results can be found in the supplementary.
+            <b>The automated QA generation pipeline for the AURA benchmark.</b> The process begins with (1) Captioning and Transcription,
+            where an input video is decomposed into text descriptions using specialized models. These multi-modal annotations are then inserted 
+            into a (2) Prompt Template for GPT-4o. The complete prompt is then used to (3) Generate a structured JSON output containing the question,
+            multiple-choice options, the correct answer, and a "gold standard" reasoning trace.
           </p>
         </div>
       </div>
